@@ -14,7 +14,7 @@ class Connector:
         создание его при необходимости
         """
         try:
-            with open(f'{self.vacancy}_hh_.json', encoding='utf-8') as file:
+            with open(f'{self.vacancy}_hh.json', encoding='utf-8') as file:
                 self.vacancies_hh = json.load(file)
         except FileNotFoundError:
             print("Файл не найден создаю новый файл")
@@ -26,7 +26,7 @@ class Connector:
          создание его при необходимости
          """
         try:
-            with open(f'{self.vacancy}_sj_.json', encoding='utf-8') as file:
+            with open(f'{self.vacancy}_sj.json', encoding='utf-8') as file:
                 self.vacancies_sj = json.load(file)
         except FileNotFoundError:
             print("Файл не найден создаю новый файл")
