@@ -63,3 +63,5 @@ def get_top(vacancies, top_count):
         json.dump(top_vacancies, file, indent=2, ensure_ascii=False)
     return top_list
 
+
+
