@@ -34,7 +34,7 @@ class HH(Head):
         for num in range(
                 50):  # при значении 50 выбирает из 1000 вакансий те в которых есть информация о З/П и она в RUR
             url = 'https://api.hh.ru/vacancies'
-            params = {'text': {self.vacancy}, "areas": 113, 'per_page': 20, 'page': num}
+            params = {'text': {self.vacancy}, 'areas': 113, 'per_page': 20, 'page': num}
             response = requests.get(url, params=params)
             info = response.json()
             if info is None:
